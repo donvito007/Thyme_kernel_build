@@ -8,31 +8,31 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel Source'
         required: true
-        default: 'https://github.com/Three-taile-dragon/crdroid_kernel_oneplus_sdm845'
+        default: 'https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250/'
       KERNEL_SOURCE_BRANCH:
         description: 'Branch'
         required: true
-        default: '13.0-m00'
+        default: 'alioth-r-oss'
       KERNEL_DEFCONFIG:
         description: 'Defconfig'
         required: true
-        default: 'arch/arm64/configs/enchilada_defconfig'
+        default: 'thyme_defconfig'
       KERNEL_FILE:
         description: 'Your kernel out image name'
         required: true
-        default: 'Image.gz-dtb'
+        default: 'Image'
       CLANG_VERSION:
         description: 'Clang version'
         required: true
-        default: 'r450784d'
+        default: 'r487747c'
       BUILD_EXTRA_COMMAND:
         description: 'Extra build commands(e.g. LLVM=1 LLVM_IAS=1)'
         required: false
-        default: 'LD=ld.lld LLVM=1 LLVM_IAS=1'
+        default: 'LD=ld.lld'
       USE_KPROBES:
         description: 'If you want to use kprobes, please type "true"'
         required: false
-        default: 'false'
+        default: 'true'
 
 jobs:
   build:
